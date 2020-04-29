@@ -14,23 +14,21 @@
 
 ## Установка
 
-Add this line to your application's Gemfile:
+Склонируйте репозиторий:
 
-```ruby
-gem 'nmax'
+```bash
+git clone https://github.com/antoshindanil/nmax
+cd nmax
 ```
 
-And then execute:
+Запустите сборку и установку gem:
 
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install nmax
+```bash
+rake install
+```
 
 ## Пример запуска: 
 
 ```bash
 cat sample_data_40GB.txt | nmax 10000
 ```
-

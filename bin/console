@@ -10,5 +10,4 @@ require "nmax"
 # require "pry"
 # Pry.start
 
-require "irb"
-IRB.start(__FILE__)
+puts Nmax.gets(STDIN, ARGV[0].to_i)

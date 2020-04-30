@@ -2,4 +2,4 @@
 
 require "nmax"
 
-puts Nmax.gets(STDIN, ARGV[0].to_i)
+puts Nmax.start(STDIN, ARGV[0].to_i)

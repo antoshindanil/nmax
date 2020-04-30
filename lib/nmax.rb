@@ -2,6 +2,15 @@ require "nmax/version"
 
 module Nmax
   class << self
+    def start(stdin, count)
+      if count
+        send(:gets, stdin, count) 
+      else
+        puts "Argument Error"
+      end
+    end
+
+    private
     def gets(stdin, count)
       array = []
       string = stdin.read.chomp

@@ -10,7 +10,7 @@ module Nmax
         array << word.to_i if word.length <= 1000
       end
 
-      array.sort.reverse.first(count)
+      array.sort.last(count).reverse
     end
   end
 end

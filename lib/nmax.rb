@@ -3,14 +3,14 @@ require "nmax/version"
 module Nmax
   class << self
     def start(stdin, count)
-      if count
+      if count >= 1
         send(:gets, stdin, count) 
       else
-        puts "Argument Error"
+        raise ArgumentError, "You not enter any args"
       end
     end
 
-    private
+    private 
     def gets(stdin, count)
       array = []
       string = stdin.read.chomp

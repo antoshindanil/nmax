@@ -6,7 +6,7 @@ module Nmax
       if count >= 1
         send(:gets, stdin, count) 
       else
-        raise ArgumentError, "You not enter any args"
+        raise ArgumentError, "You not entered any args or entered not integer"
       end
     end
 
